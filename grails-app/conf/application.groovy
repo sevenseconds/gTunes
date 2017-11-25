@@ -1,5 +1,3 @@
-import org.apache.tomcat.jdbc.pool.interceptor.ConnectionState
-
 environments {
     production {
         dataSource {
@@ -26,7 +24,7 @@ environments {
                 testOnBorrow = true
                 testWhileIdle = true
                 testOnReturn = false
-                jdbcInterceptors = ConnectionState
+                jdbcInterceptors = "ConnectionState"
                 defaultTransactionIsolation = 2 // TRANSACTION_READ_COMMITTED
             }
         }
