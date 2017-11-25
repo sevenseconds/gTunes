@@ -110,7 +110,7 @@ environments:
     production:
         dataSource:
             dbCreate: none
-            url: ${DATABASE_URL}
+            url: ${JDBC_CONNECTION_STRING}
             properties:
                 jmxEnabled: true
                 initialSize: 5
