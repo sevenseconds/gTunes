@@ -110,6 +110,8 @@ environments:
     production:
         dataSource:
             dbCreate: none
+            driverClassName: org.postgresql.Driver
+            dialect: org.hibernate.dialect.PostgreSQL94Dialect
             properties:
                 jmxEnabled: true
                 initialSize: 5
